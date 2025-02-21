@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiang Mai Bus Tickets</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
+        header { background: #ff5733; color: white; padding: 15px; font-size: 24px; }
+        .container { padding: 20px; }
+        .button { background: #ff5733; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+        .button:hover { background: #c4421a; }
+        footer { margin-top: 20px; padding: 10px; background: #333; color: white; }
+    </style>
+</head>
+<body>
+    <header>Chiang Mai Bus Tickets</header>
+    <div class="container">
+        <h2>Book Your Bus Ticket Easily</h2>
+        <p>Find the best routes and book your bus tickets conveniently online.</p>
+        <a href="#book" class="button">Book Now</a>
+    </div>
+    <div class="container" id="book">
+        <h3>Book Your Ticket</h3>
+        <form>
+            <label for="from">From:</label>
+            <input type="text" id="from" name="from" placeholder="Enter departure city"><br><br>
+            <label for="to">To:</label>
+            <input type="text" id="to" name="to" placeholder="Enter destination"><br><br>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date"><br><br>
+            <button type="submit" class="button"><a href="Buses.html">Search Buses</button></a>
+        </form>
+    </div>
+    <div class="container">
+        <h3>Booking Process</h3>
+        <div class="mermaid">
+            graph TD;
+            A[Start] --> B[Enter Details];
+            B --> C[Search Buses];
+            C --> D[Select Bus];
+            D --> E[Make Payment];
+            E --> F[Get Ticket];
+            F --> G[End];
+        </div>
+    </div>
+    <footer>
+        <p>Contact us: info@chiangmaibustickets.com | Phone: +66 123 456 789</p>
+    </footer>
+</body>
+</html>
